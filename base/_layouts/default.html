@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	{% include head.html %}
+
+	<body>
+
+		{% include nav.html %}
+
+		<main class="main">
+			{{ content }}
+		</main>
+
+		<footer>
+			<span style="bottom: 0;right:0;left:0;text-align:center;width: 100%">
+				&copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> <a href="{{ site.author.url }}" target="_blank">{{ site.author.name }}.
+			</span>
+		</footer>
+		
+	</body>
+</html>

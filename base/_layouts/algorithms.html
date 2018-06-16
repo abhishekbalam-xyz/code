@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<br>
+<h1 class="post-title"> {{ page.title }} </h1>
+
+<div class="post-line"></div>
+
+<div class="catalogue">
+  {% assign sorted = site.algorithms | sort: 'date' | reverse %}
+
+  {% for thought in sorted %}
+    <a href="{{ thought.url | prepend: site.baseurl }}" class="catalogue-item">
+      <div>
+        
+        <!-- <time datetime="{{ thought.date }}" class="catalogue-time">{{ thought.date | date: "%B %d, %Y" }}</time> -->
+        {% if thought.delete %}
+          <h1 class="catalogue-title" style="text-decoration: line-through;">{{ thought.title }}</h1>
+        {% else %}
+          <h1 class="catalogue-title" >{{ thought.title }}</h1>
+        {% endif %}
+        <div class="catalogue-line"></div>
+
+        <p>
+          {{ thought.content | truncatewords: 30 | strip_html }}
+        </p>
+
+      </div>
+    </a>
+  {% endfor %}
+</div>

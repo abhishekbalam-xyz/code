@@ -1,0 +1,55 @@
+# Site settings
+title:          "Code"
+description:    "Coding Blog | Abhishek Balam"
+baseurl:        ""
+url:            "https://code.abhishekbalam.xyz/"
+
+exclude: [_algorithms/drafts, _posts/drafts ]
+
+
+# Author
+author:
+  name:         Abhishek Balam
+  url:          https://abhishekbalam.xyz
+  email:        abhishekbalam96@gmail.com
+
+
+# Jekyll template folder locations
+
+plugins_dir:     ./base/_plugins
+
+layouts_dir:     ./base/_layouts
+
+data_dir:        ./base/_data
+
+includes_dir:    ./base/_includes
+
+
+# Collections
+collections:
+ algorithms:
+  output: true
+  permalink: /algo/:title
+
+
+# Build settings
+markdown: kramdown
+
+# Assets
+sass:
+  sass_dir:     /assets/_sass
+  style:        compressed
+  cache: false
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Permalinks
+permalink:      /prob/:title
+paginate:       5
+
+# Pagination
+paginate_path: "/problems/:num/"
+
+port: 4000
