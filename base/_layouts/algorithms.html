@@ -11,7 +11,7 @@ layout: default
   {% assign sorted = site.algorithms | sort: 'date' | reverse %}
 
   {% for thought in sorted %}
-    <a href="{{ thought.url | prepend: site.baseurl }}" class="catalogue-item">
+    <a href="{{ thought.url | prepend: site.baseurl }}" class="catalogue-item" style="width: 100%">
       <div>
         
         <!-- <time datetime="{{ thought.date }}" class="catalogue-time">{{ thought.date | date: "%B %d, %Y" }}</time> -->
