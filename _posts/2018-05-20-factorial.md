@@ -7,41 +7,20 @@ subtitle: "A program to get factorial of a number."
 
 # Java
 
-{% highlight java %}
-import java.util.*;
-import java.io.*;
+## Using Loop 
 
-class Main
-{
-    private static int factorial(int num){
-        int factorial=1;
-        for(int i=1; i<=num; i++){
-            factorial=i*factorial;            
-        }
-        return factorial;
-    }
-	public static void main (String[] args)
-	{
-        Scanner sc =  new Scanner(System.in);
-        System.out.println("Enter the number:");
-        int num=sc.nextInt();
-        System.out.println("The Factorial of "+num+" is: "+factorial(num));
-	}
-}
-{% endhighlight %}
+<script src="https://gist.github.com/abhishekbalam/0bd16c718b4b9a63af95b7a6825aa227.js"></script>
+
+## Using Recursion
+
+<script src="https://gist.github.com/abhishekbalam/63b568bc50d6f14cfc61b193819b60d1.js"></script>
 
 # Python
 
-{% highlight python %}
-def factorial(num):
-    factorial=1;
-    for i in range(1,(num+1)):
-        factorial=i*factorial
-    return str(factorial)
-    
-def main():
-    num=int(input("Enter the number:\n"))
-    print("The factorial of "+str(num)+" is: "+factorial(num))
-    
-main()
-{% endhighlight %}
+## Using Loop
+
+<script src="https://gist.github.com/abhishekbalam/907b88725e68cc3d6e86e7f291a7cdc7.js"></script>
+
+## Using Recursion
+
+<script src="https://gist.github.com/abhishekbalam/386ed8a3769e3d2c0df92dd87987b45b.js"></script>

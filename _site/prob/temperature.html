@@ -4,7 +4,7 @@
 	<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A program to convert to and from temprature scales.  From oC to oF  F = 9*C/5+32   From oF to oC ...">
+  <meta name="description" content="Note A program to convert to and from temprature scales.  From oC to oF  F = 9*C/5+32   From oF to...">
   <title>
     
       Temperature 
@@ -63,7 +63,9 @@
   <h1 class="post-title">Temperature</h1>
   <div class="post-line"></div>
   <div class="post-body">
-  <p>A program to convert to and from temprature scales.</p>
+  <h1 id="note">Note</h1>
+
+<p>A program to convert to and from temprature scales.</p>
 <ul>
   <li>From <sup>o</sup>C to <sup>o</sup>F
     <ul>
@@ -79,53 +81,24 @@
 
 <h1 id="java">Java</h1>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
-
-<span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
-        <span class="n">Scanner</span> <span class="n">sc</span><span class="o">=</span><span class="k">new</span> <span class="n">Scanner</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
-        <span class="kt">float</span> <span class="n">num</span><span class="o">;</span>
-        <span class="kt">int</span> <span class="n">conversion</span><span class="o">;</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Enter Temperature in C:"</span><span class="o">);</span>
-        <span class="n">num</span><span class="o">=</span><span class="n">sc</span><span class="o">.</span><span class="na">nextFloat</span><span class="o">();</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Enter type of conversion.\n0) C to F\n1) F to C"</span><span class="o">);</span>
-        <span class="n">conversion</span><span class="o">=</span><span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-        <span class="kt">float</span> <span class="n">soln</span><span class="o">;</span>
-        <span class="k">if</span><span class="o">(</span><span class="n">conversion</span><span class="o">==</span><span class="mi">0</span><span class="o">){</span>
-            <span class="n">soln</span><span class="o">=(</span><span class="mi">9</span><span class="o">*</span><span class="n">num</span><span class="o">/</span><span class="mi">5</span><span class="o">)+</span><span class="mi">32</span><span class="o">;</span>
-            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">soln</span><span class="o">+</span><span class="s">"F"</span><span class="o">);</span>
-        <span class="o">}</span>
-        <span class="k">else</span><span class="o">{</span>
-            <span class="n">soln</span><span class="o">=(</span><span class="n">num</span><span class="o">-</span><span class="mi">32</span><span class="o">)*</span><span class="mi">5</span><span class="o">/</span><span class="mi">9</span><span class="o">;</span>
-            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">soln</span><span class="o">+</span><span class="s">"C"</span><span class="o">);</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-<span class="o">}</span></code></pre></figure>
+<script src="https://gist.github.com/abhishekbalam/c48c1477aac4d534530a7e937393b5e0.js"></script>
 
 <h1 id="python">Python</h1>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">num</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the number:"</span><span class="p">)</span>
-<span class="n">conversion</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter type of conversion.</span><span class="se">\n</span><span class="s">0) C to F</span><span class="se">\n</span><span class="s">1) F to C</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<script src="https://gist.github.com/abhishekbalam/e762422e3fa13904bfbcd1acff378083.js"></script>
 
-<span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">conversion</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
-    <span class="n">soln</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="o">*</span><span class="n">num</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span><span class="o">+</span><span class="mi">32</span><span class="p">;</span>
-    <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">soln</span><span class="p">)</span><span class="o">+</span><span class="s">"F"</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">soln</span><span class="o">=</span><span class="p">(</span><span class="n">num</span><span class="o">-</span><span class="mi">32</span><span class="p">)</span><span class="o">*</span><span class="mi">5</span><span class="o">/</span><span class="mi">9</span><span class="p">;</span>
-    <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">soln</span><span class="p">)</span><span class="o">+</span><span class="s">"C"</span><span class="p">)</span></code></pre></figure>
 
   </div>
 </div>
 
 <div class="pagination">
   
-    <a href="/prob/swap" class="left arrow">&#8592;</a>
+    <a href="/prob/odd-even" class="left arrow">&#8592;</a>
   
   
-    <a href="/prob/odd-even" class="right arrow">&#8594;</a>
+    <a href="/prob/swap" class="right arrow">&#8594;</a>
   
-
+  
   <a href="#" class="top">Top</a>
 </div>
 
@@ -133,7 +106,7 @@
 
 		<footer>
 			<span style="bottom: 0;right:0;left:0;text-align:center;width: 100%">
-				&copy; <time datetime="2018-06-20 23:33:05 +0530">2018</time> <a href="https://abhishekbalam.xyz" target="_blank">Abhishek Balam.
+				&copy; <time datetime="2018-06-27 18:15:33 +0530">2018</time> <a href="https://abhishekbalam.xyz" target="_blank">Abhishek Balam.
 			</span>
 		</footer>
 		

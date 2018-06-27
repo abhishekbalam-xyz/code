@@ -5,6 +5,8 @@ subtitle: "A program to convert to and from temprature scales."
 
 ---
 
+# Note 
+
 A program to convert to and from temprature scales.
 - From <sup>o</sup>C to <sup>o</sup>F
 	- F = 9*C/5+32
@@ -13,46 +15,8 @@ A program to convert to and from temprature scales.
 
 # Java
 
-{% highlight java %}
-
-import java.io.*;
-import java.util.Scanner;
-
-class Main{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        float num;
-        int conversion;
-        System.out.println("Enter Temperature in C:");
-        num=sc.nextFloat();
-        System.out.println("Enter type of conversion.\n0) C to F\n1) F to C");
-        conversion=sc.nextInt();
-        float soln;
-        if(conversion==0){
-            soln=(9*num/5)+32;
-            System.out.println(soln+"F");
-        }
-        else{
-            soln=(num-32)*5/9;
-            System.out.println(soln+"C");
-        }
-    }
-}
-{% endhighlight %}
-
+<script src="https://gist.github.com/abhishekbalam/c48c1477aac4d534530a7e937393b5e0.js"></script>
 
 # Python
 
-{% highlight python %}
-
-num=input("Enter the number:")
-conversion=input("Enter type of conversion.\n0) C to F\n1) F to C\n")
-
-if int(conversion)==0:
-    soln=(9*num/5)+32;
-    print(str(soln)+"F")
-else:
-    soln=(num-32)*5/9;
-    print(str(soln)+"C")
-
-{% endhighlight %}
+<script src="https://gist.github.com/abhishekbalam/e762422e3fa13904bfbcd1acff378083.js"></script>
