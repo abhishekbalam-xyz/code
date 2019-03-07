@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome To My Coding Blog"
+title: "Welcome To My Awesome Coding Blog"
 author: false
 
 ---
